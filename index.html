@@ -45,8 +45,8 @@ const Comments = (props) => {
             const issue_number = search.slice(1);
             if (issue_number && !comments) {
               const { url, ...options } = endpoint('GET /repos/:owner/:repo/issues/:issue_number/comments', {
-                owner: 'casualjavascript',
-                repo: 'blog',
+                owner: 'XuperX',
+                repo: 'TheCollector',
                 issue_number,
               });
 
